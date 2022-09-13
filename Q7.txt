@@ -1,0 +1,15 @@
+//String to Int typecasting
+import java.util.*;
+public class Assignment6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String str = sc.next();
+        int x = Integer.parseInt(str);
+        System.out.println("The integer typecast of str is= "+x);
+        System.out.println("Enter a number:");
+        int i=sc.nextInt();
+        String s=String.valueOf(i);
+        System.out.println("The String typecast of integer i is: "+s);
+    }
+}

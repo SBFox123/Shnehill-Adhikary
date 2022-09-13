@@ -1,0 +1,32 @@
+//Sort an array ascending
+import java.util.*;
+public class Assignment4 {
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int ar[]=new int[100];
+        int i,a,j;
+        System.out.println("Enter 10 Numbers in an Array: ");
+        for( i=0;i<10;i++)
+        {
+            ar[i]=sc.nextInt();
+        }
+        for( i=0;i<10;i++)
+        {
+            for(j=i+1;j<10;j++)
+            {
+                if (ar[i] > ar[j])
+                {
+                    a = ar[j];
+                    ar[j] = ar[i];
+                    ar[i] = a;
+                }
+            }
+        }
+        for(i=0;i<10;i++)
+        {
+            System.out.print(" "+ar[i]+" ");
+        }
+        }
+    }
+

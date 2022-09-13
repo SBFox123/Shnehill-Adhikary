@@ -1,0 +1,17 @@
+//Remove a character from a string
+import java.util.*;
+    public class Assignment7 {
+        public static void main(String[]args)
+        {
+            Scanner sc=new Scanner(System.in);
+            String str;
+            System.out.println("Enter a String:");
+            str=sc.nextLine();
+            int l=str.length();
+            System.out.println("The length of the string is="+l);
+            System.out.println("Enter to remove a character");
+            String ch=sc.next();
+            System.out.println(str.replace(ch,""));
+
+            }
+    }
